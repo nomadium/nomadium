@@ -1,0 +1,32 @@
+[[!meta title="Miguel Landaeta"]]
+
+Just a guy at Caracas, Venezuela. I have a day job at
+[Open English](http://www.openenglish.com) as software developer (though my job
+involves so many sysadmin duties) focused and specialized on scalability,
+infrastructure issues and capacity planning.
+
+On the side, in my spare time I like to hack, debug, learn, collaborate and
+participate in free software development and activities. Currently involved
+in [Debian](http://www.debian.org/), particularly with Java and Python modules
+teams as unofficial maintainer.
+
+Outside computers and other software stuff, I like to learn languages as hobby
+so I'm learning German...  Ich kann ein bisschen Deutsch sprechen.
+
+
+So, what you can find in this particularly irrelevant website?
+
+* [[Contact]] me (really? do you want to do that?)
+<!--* My [[blog]] (oh yeah, so many wisdom and interesting stuff there! LOL!!1!1one!) -->
+* Some [[code]] I have written
+* <del>My cats' pictures</del>
+* An [[aggregator of me|grep]] on the web (perfect for stalkers and the like)
+* [[Sandbox]] (every wiki have to have one, right?)
+* [PGP key](http://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x6E608B637D8967E9)
+* [Webmail](https://webmail.miguel.cc/)
+
+[[!meta openid="https://nomadium.myopenid.com/"
+server="http://www.myopenid.com/server"]]
+
+***
+This site is powered by a wonderful piece of software named [[ikiwiki]].

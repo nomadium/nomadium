@@ -1,0 +1,12 @@
+Me or stuff that has to do with me, around the web.
+
+[[!inline pages="internal(grep/*) and !*/Discussion" show=100]]
+
+---
+
+List of feeds:
+
+* [[!aggregate expirecount=25 name="twitter entries" feedurl="http://twitter.com/statuses/user_timeline/18996060.rss" url="http://twitter.com/nomadium"]]
+* [[!aggregate expirecount=25 name="twitter replies" feedurl="http://search.twitter.com/search.atom?q=%40nomadium" url="http://search.twitter.com/search?q=%40nomadium"]]
+* [[!aggregate expirecount=25 name="last.fm" feedurl="http://ws.audioscrobbler.com/1.0/user/nomadium/recenttracks.rss" url="http://www.last.fm/user/nomadium"]]
+* [[!aggregate expirecount=25 name="delicious bookmarks" feedurl="http://feeds.delicious.com/v2/rss/nomadium?count=15" url="http://del.icio.us/nomadium"]]
