@@ -1,0 +1,27 @@
+Recently,
+[Amazon announced support](http://aws.typepad.com/aws/2010/07/use-your-own-kernel-with-amazon-ec2.html)
+for user provided Linux kernels in Amazon EC2.
+
+Since they provided a list of supported distributions but Debian was not
+included, I decided to give a try to this new feature to see if I could boot a
+Linux kernel provided by Debian.
+
+Following the instructions available in
+[EC2 documentation](http://ec2-downloads.s3.amazonaws.com/user_specified_kernels.pdf)
+and the recommendations for [Xen usage](http://wiki.debian.org/Xen) at Debian
+wiki, I could boot an AMI using `linux-image-2.6.32-5-686-bigmem` kernel
+included with upcoming Debian 6.0 (squeeze, right now at testing stage).
+
+You just have to:
+
+* Indicate in `/boot/grub/menu.lst` `root=/dev/xvda1` as root device.
+* Make sure `/etc/fstab` contains the correct device names.
+* Bundle your image with `linux-image-2.6.32-5-686-bigmem` and `grub-legacy` packages
+  installed.
+
+In the [Xen entry](http://wiki.debian.org/Xen) at Debian wiki is mentioned that
+domU instances can boot with a Linux image Xen flavor, but I could not boot
+`linux-image-2.6.32-5-xen-686` in Amazon EC2. I'll investigate why that's
+happening.
+
+[[!tag debian]]
