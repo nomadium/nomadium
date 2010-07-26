@@ -1,0 +1,29 @@
+[[!meta title="ikiwiki + github pages = EPIC win!"]]
+
+Since a while ago I was aware of the possibility of hosting an ikiwiki
+generated website at github using [github pages][github_pages].
+This is described with great detail on [tips section of ikiwiki website]
+[ikiwiki_tips].
+
+Later, it was [announced the possibility of using custom domains]
+[github_pages_cname] with github pages, but unfortunately this feature was
+available only to paying customers. Don't get me wrong, github is fantastic
+and they provide a service really worth paying for (especially for private
+projects), but for a [dollar starved guy like me][cadivi], I try to
+avoid any expense in foreign currency.
+
+So, it was cool to find out that the custom domain feature for github pages
+now is free. I decided to give a try and migrate this website hosting there.
+I could save a few bucks with hosting and gained the feature of updating my
+website using git standard tools (pretty awesome and convenient if you ask me,
+with one push you can publish updates or revert changes).
+
+I'm going to investigate options about how to implement the dynamic portion of
+ikiwiki (ikiwiki.cgi, and maybe comments), but for now my main use case of
+ikiwiki is covered with github pages provided hosting.
+
+
+[github_pages]: http://pages.github.com/
+[github_pages_cname]: http://github.com/blog/315-cname-support-for-github-pages
+[ikiwiki_tips]: http://ikiwiki.info/tips/github/
+[cadivi]: http://en.wikipedia.org/wiki/CADIVI
