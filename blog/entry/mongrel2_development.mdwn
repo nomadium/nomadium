@@ -1,0 +1,55 @@
+In my opinion you can learn a lot [following the development process][zedshaw]
+of [Mongrel2][mongrel2]. Mongrel2 is a redesign of Mongrel web server and it
+is a project that have as goal to provide an application, language, and network
+architecture agnostic web server.
+
+This is probably the most interesting project that I could find right now on
+the web, because it is under heavy development, it is using new concepts and
+ideas, it is written in C ([very clear and legible code][commit] if you ask
+me), the development process is totally in the open, and this could benefit
+many people if successfully achieve its goal.
+
+Because of that, and because of the very big bold goal of this project I'm
+following its progress, I'm testing it and I plan to contribute with Mongrel2
+if possible. By now, I'm only contributing from the distribution side of
+things, so I prepared some packages necessary to test Mongrel2 in Debian
+(despite Mr. Zed Shaw is very critic of the ``slowness'' of Linux distributions
+picking new software).
+
+Anyway, below are some links to binary and source packages for Mongrel2 and a
+couple of dependencies, if anyone besides me is interested in testing this
+in Debian (or Ubuntu). I already asked for review to have those packages
+included officially in Debian.
+
+* mongrel2:
+  [binary][mongrel2_binary], [source][mongrel2_source], [git][mongrel2_git],
+  [upstream][mongrel2_upstream].
+
+* python-storm (needed to use m2sh):
+  [binary][storm_binary], [source][storm_source], [git][storm_git],
+  [upstream][storm_upstream].
+
+* python-zmq (needed to run the examples included with mongrel2):
+  [binary][pyzmq_binary], [source][pyzmq_source], [git][pyzmq_git],
+  [upstream][pyzmq_upstream].
+
+
+
+[zedshaw]: http://twitter.com/zedshaw
+[mongrel2]: http://mongrel2.org/
+[commit]: http://mongrel2.org/artifact?name=0222d9bb954be5237b1f6be69ef62d9a53a1e4dd
+
+[mongrel2_binary]: http://alioth.debian.org/~nomadium-guest/debian/unstable/mongrel2_0.9.20100730+fossil2037a497b7-1_amd64.deb
+[mongrel2_source]: http://alioth.debian.org/~nomadium-guest/debian/unstable/mongrel2_0.9.20100730+fossil2037a497b7-1.dsc
+[mongrel2_git]: http://git.debian.org/?p=collab-maint/mongrel2.git
+[mongrel2_upstream]: http://mongrel2.org/wiki?name=GettingStarted
+
+[storm_binary]: http://alioth.debian.org/~nomadium-guest/debian/unstable/python-storm_0.16.0-1_amd64.deb
+[storm_source]: http://alioth.debian.org/~nomadium-guest/debian/unstable/storm_0.16.0-1.dsc
+[storm_git]: http://git.debian.org/?p=users/nomadium-guest/storm.git
+[storm_upstream]: https://storm.canonical.com/#Download
+
+[pyzmq_binary]: http://alioth.debian.org/~nomadium-guest/debian/unstable/python-pyzmq_0.1.20100703+git18f5d06155-1_amd64.deb
+[pyzmq_source]: http://alioth.debian.org/~nomadium-guest/debian/unstable/pyzmq_0.1.20100703+git18f5d06155-1.dsc
+[pyzmq_git]: http://git.debian.org/?p=users/nomadium-guest/pyzmq.git
+[pyzmq_upstream]: http://github.com/zeromq/pyzmq
