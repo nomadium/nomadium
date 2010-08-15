@@ -22,6 +22,7 @@ So, what you can find in this particularly irrelevant website?
 * <del>My cats' pictures</del>
 * An [[aggregator of me|grep]] on the web (perfect for stalkers and the like)
 * [[Sandbox]] (every wiki have to have one, right?)
+* [My Flavors.me](http://flavors.me/nomadium)
 * [PGP key](http://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x6E608B637D8967E9)
 * [Webmail](https://webmail.miguel.cc/)
 
