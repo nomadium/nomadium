@@ -1,17 +1,24 @@
 [[!meta title="Miguel Landaeta"]]
 
-Just a guy at Caracas, Venezuela. I have a day job at
-[Open English](http://www.openenglish.com) as software developer (though my job
-involves so many sysadmin duties) focused and specialized on scalability,
-infrastructure issues and capacity planning.
+Just a guy at Buenos Aires, Argentina. I have a day job at
+[Open English](http://www.openenglish.com) as software developer (although my 
+current job title there is R&D Tech Leader and involves some sysadmin/devops
+duties) focused and specialized on scalability, automation, infrastructure
+issues and capacity planning.
 
 On the side, in my spare time I like to hack, debug, learn, collaborate and
-participate in free software development and activities. Currently involved
+participate in free software development and activities. I'm currently involved
 in [Debian](http://www.debian.org/), particularly with Java and Python modules
-teams as unofficial maintainer.
+teams. I'm an
+[official developer](https://db.debian.org/search.cgi?id=&authtoken&uid=nomadium&dosearch=Search...)
+of that project.
 
 Outside computers and other software stuff, I like to learn languages as hobby
 so I'm learning German...  Ich kann ein bisschen Deutsch sprechen.
+
+I'm also a big big fan of indie rock bands and I have an significant
+interest on Economics but I haven't persuit any formal training on this
+social science yet. Time will tell, who knows?
 
 
 So, what you can find in this particularly irrelevant website?
@@ -21,10 +28,10 @@ So, what you can find in this particularly irrelevant website?
 * Some [[code]] I have written
 * <del>My cats' pictures</del>
 * An [[aggregator of me|grep]] on the web (perfect for stalkers and the like)
-* [[Sandbox]] (every wiki have to have one, right?)
+* [[Sandbox]] (every wiki has to have one, right?)
 * [My Flavors.me](http://flavors.me/nomadium)
-* [PGP key](http://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x6E608B637D8967E9)
-* [Webmail](https://webmail.miguel.cc/)
+* [PGP key](https://db.debian.org/fetchkey.cgi?fingerprint=4CB7FE1E280ECC90F29A597E6E608B637D8967E9)
+* <del>[Webmail](https://webmail.miguel.cc/)</del> (nobody uses this anymore)
 
 [[!sidebar content="""
 Recent [[blog]] posts:
