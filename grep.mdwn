@@ -1,4 +1,9 @@
-Me or stuff that has to do with me, around the web.
+<del>Me or stuff that has to do with me, around the web.</del>
+
+I have not updated this page in 4 years or so. In consequence almost
+all rss links are broken due to API changes.
+
+Maybe some day I'll review this to put relevant information again.
 
 [[!inline pages="internal(grep/*) and !*/Discussion" show=100]]
 

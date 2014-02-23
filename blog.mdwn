@@ -1,6 +1,1 @@
 [[!inline pages="blog/entry/*" show="10" actions="yes"]]
-
-[[!sidebar content="""
-Recent [dents](http://twitter.com/nomadium):
-[[!inline pages="internal(grep/twitter_entries/*)" template="microblog" show=5 feeds=no]]
-"""]]

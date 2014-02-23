@@ -1,9 +1,10 @@
-So far nothing to show here about my personal projects.
-Overcoming procrastination in order to complete something.
+<del>So far nothing to show here about my personal projects.</del>
+<del>Overcoming procrastination in order to complete something.</del>
 
 Regarding [Debian](http://www.debian.org/), all my packaging work is available
-on [git.debian.org](http://git.debian.org), under pkg-java, collab-maint and
-users/nomadium-guest folders.
+on [git.debian.org](http://git.debian.org), under pkg-java and collab-maint and
+folders. There are also some legacy subversion repositores on
+[svn.debian.org](http://svn.debian.org).
 
 The list of packages that I'm currently mantaining can be found at
-[qa.debian.org](http://qa.debian.org/developer.php?login=miguel@miguel.cc).
+[qa.debian.org](http://qa.debian.org/developer.php?login=nomadium@debian.org).
