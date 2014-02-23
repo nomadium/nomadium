@@ -1,0 +1,16 @@
+[[!meta title="life: 2010-2014"]]
+
+Wow, it looks like the last time I blogged something here was like 3 years
+and 7 months or so.
+
+In that period many things had changed but the most relevant event were:
+
+* I don't live anymore in Venezuela.
+
+* I became a Debian Developer.
+
+Another important things happened on my personal life but they don't belong
+on this blog anyway.
+
+It feels good to write something again even if it's absolutely irrelevant
+in the great scheme of things.

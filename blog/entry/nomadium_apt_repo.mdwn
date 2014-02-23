@@ -1,0 +1,21 @@
+[[!meta title="nomadium APT repository"]]
+
+Well, the reason why I revived this blog (again) was because I wanted
+to document the fact I setup what I expect to be an stable APT repo
+for packages prepared by myself but not ready to be included in Debian
+for whatever reason at the moment.
+
+It's available at:
+[http://people.debian.org/~nomadium/apt/](http://people.debian.org/~nomadium/apt/).
+
+Right now I'm working in some projects and I'm using some software
+that is outdated, just not available on Debian stable suite or
+on stable backports, e.g.:
+
+* chef (>= 11.8)
+* docker.io
+* mosh
+
+So, I decided to backport and upload those packages (and their
+dependencies) there. Maybe somebody else can find uses for that
+until they are included in the next stable release.
