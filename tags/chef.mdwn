@@ -1,0 +1,4 @@
+[[!meta title="pages tagged chef"]]
+
+[[!inline pages="tagged(chef)" actions="no" archive="yes"
+feedshow=10]]
