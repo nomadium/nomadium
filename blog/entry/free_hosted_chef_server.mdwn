@@ -1,0 +1,29 @@
+[[!meta title="Free Chef server hosted at api.qirtaiba.org"]]
+
+Since months ago I was pondering over providing an alternative [Chef][chef]
+hosted service.
+
+The timing of the [recent announcement by Chef, Inc.][announcement] converging
+and releasing a single code base under Apache 2.0 license for Chef server
+certainly makes this initiative even more interesting for me.
+
+So, I wanted to see if there is interest in such thing and I went ahead to
+setup this service.
+
+The service is free to use and is available at [api.qirtaiba.org][qirtaiba].
+
+The service is beta but you are more than invited to use it.
+
+I look forward to hear comments and see what the people think about it.
+You can [drop me a line][email] or a [tweet][twitter] if you wish.
+
+Let's hack and automate.
+
+
+[chef]: https://www.chef.io/
+[announcement]: https://www.chef.io/blog/2014/09/08/chef-releases-chef-12-to-power-devops-practices-in-the-enterprise/
+[qirtaiba]: https://api.qirtaiba.org/
+[email]: mailto:miguel@miguel.cc
+[twitter]: https://twitter.com/nomadium
+
+[[!tag chef]]
