@@ -1,15 +1,14 @@
 [[!meta title="Miguel Landaeta"]]
 
 Just a guy at Buenos Aires, Argentina. I have a day job at
-[Open English](http://www.openenglish.com) as software developer (although my 
-current job title there is R&D Tech Leader and involves some sysadmin/devops
-duties) focused and specialized on scalability, automation, infrastructure
-issues and capacity planning.
+[Restorando](http://www.restorando.com) as software developer (my official
+title currently os Operations Engineer) focused and specialized on
+scalability, automation, infrastructure issues and capacity planning.
 
-On the side, in my spare time I like to hack, debug, learn, collaborate and
-participate in free software development and activities. I'm currently involved
-in [Debian](http://www.debian.org/), particularly with Java and Python modules
-teams. I'm an
+On the side, in my spare time I like to hack, debug, learn, teach,
+collaborate and participate in free software development and activities.
+I'm currently involved in [Debian](http://www.debian.org/), particularly with
+Java, Ruby and Python modules teams. I'm an
 [official developer](https://db.debian.org/search.cgi?id=&authtoken&uid=nomadium&dosearch=Search...)
 of that project.
 
