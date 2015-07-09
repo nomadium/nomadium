@@ -1,0 +1,110 @@
+[[!meta title="Write AWS Lambda functions in Ruby"]]
+
+Since AWS Lambda service release last year [announcement][release],
+I wanted to try this service and I actually did it. I found it very
+interesting, powerful and full of possibilities, but to be honest, Node.js is
+not really my cup of tea. So, I kept waiting for additional languages support.
+
+So, with the recent announcement about [Java 8 support][java8] for AWS Lambda,
+I found an excuse to try it again and for this I decided to use JRuby and
+write my test functions in Ruby.
+
+After stumbling upon and reporting an [issue][issue] with JRuby releases
+before 1.7.21, I was finally able to write and run AWS Lambda functions in
+Ruby.
+
+To test this, I took the most [basic example][walkthrough] from
+AWS documentation and rewrote in Ruby:
+
+```
+require 'java'
+ 
+java_package 'example'
+ 
+java_import 'com.amazonaws.services.lambda.runtime.Context'
+java_import 'com.amazonaws.services.lambda.runtime.LambdaLogger'
+ 
+class Hello
+  java_signature 'String handler(int count, Context context)'
+  def handler(count, context)
+    logger = context.getLogger
+    logger.log("received : #{count}")
+    count.to_s
+  end
+end
+```
+
+To deploy and run that code, you must create an artifact acceptable for
+AWS Lambda (mostly .zip and .jar files). You can create those artifacts by
+using Maven as is explained in the [documentation][deployment].
+
+Your code should end in a location similar to:
+`proj-dir/src/main/ruby/example/Hello.rb`.
+
+And you need to add some extra dependencies to use JRuby:
+
+JRuby (use jruby-complete jar [1.7.21][1_7_21] or greater):
+
+```
+<dependency>
+  <groupId>org.jruby</groupId>
+  <artifactId>jruby-complete</artifactId>
+  <version>1.7.21</version>
+</dependency>
+```
+
+JRuby Maven compiler plugin:
+
+```
+<plugin>
+  <groupId>de.saumya.mojo</groupId>
+  <artifactId>jruby-maven-plugin</artifactId>
+  <version>1.0.10</version>
+  <executions>
+    <execution>
+      <phase>generate-sources</phase>
+      <goals>
+        <goal>compile</goal>
+      </goals>
+      <configuration>
+        <generateJava>true</generateJava>
+        <generatedJavaDirectory>${jruby.generated.sources}</generatedJavaDirectory>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+```
+
+After adding these extra dependencies and running `mvn package` you should have
+a .jar file ready to be used with Lambda.
+
+So far, I only have observed two downsides about using JRuby for
+Lambda functions. The first one is, jruby-complete distribution is 20 MB in
+size, so I found my functions a little bloated in size.
+Hopefully, in the future AWS will add support for more runtimes and this will
+not be an issue anymore.
+
+The second detail is, the first time you run your function you will notice
+a very long execution time (around 10s in my case) due to the usual slow JVM
+start up time. If you function is executed with relative frequence you will
+notice AWS Lambda reuse hardware and will obtain more reasonable execution
+times (around 100 ms for trivial functions).
+
+All in all, I look forward to find more uses for this service and I hope for
+more convenient languages (e.g. Ruby, Go, Python, etc) being supported in AWS
+Lambda.
+
+
+PS. In an AWS event today, it was announced a new service named
+["API Gateway"][api_gateway] that can be combined with AWS Lambda as backend
+functions to build API endpoints. It's worth checking out.
+
+[release]: https://aws.amazon.com/blogs/aws/run-code-cloud/
+[java8]: https://aws.amazon.com/blogs/aws/aws-lambda-update-run-java-code-in-response-to-events/
+[issue]: https://forums.aws.amazon.com/thread.jspa?messageID=631100
+[walkthrough]: http://docs.aws.amazon.com/lambda/latest/dg/java-gs.html
+[deployment]: http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html
+[1_7_21]: http://jruby.org/2015/07/07/jruby-1-7-21.html
+[api_gateway]: http://aws.amazon.com/api-gateway/
+
+[[!tag aws]]
