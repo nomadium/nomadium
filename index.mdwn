@@ -2,7 +2,7 @@
 
 Just a guy at Buenos Aires, Argentina. I have a day job at
 [Restorando](http://www.restorando.com) as software developer (my official
-title currently os Operations Engineer) focused and specialized on
+title currently is Operations Engineer) focused and specialized on
 scalability, automation, infrastructure issues and capacity planning.
 
 On the side, in my spare time I like to hack, debug, learn, teach,
