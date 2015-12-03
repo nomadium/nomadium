@@ -99,6 +99,12 @@ PS. In an AWS event today, it was announced a new service named
 ["API Gateway"][api_gateway] that can be combined with AWS Lambda as backend
 functions to build API endpoints. It's worth checking out.
 
+Update (2015/12/03):
+
+[Akio Katayama][akio] published a [niftier way][aws-lambda-jruby] to build your
+Lambda functions with JRuby but using gradle instead of plain old Maven. Check it
+out!
+
 [release]: https://aws.amazon.com/blogs/aws/run-code-cloud/
 [java8]: https://aws.amazon.com/blogs/aws/aws-lambda-update-run-java-code-in-response-to-events/
 [issue]: https://forums.aws.amazon.com/thread.jspa?messageID=631100
@@ -106,5 +112,7 @@ functions to build API endpoints. It's worth checking out.
 [deployment]: http://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html
 [1_7_21]: http://jruby.org/2015/07/07/jruby-1-7-21.html
 [api_gateway]: http://aws.amazon.com/api-gateway/
+[akio]: https://github.com/c9katayama
+[aws-lambda-jruby]: https://github.com/c9katayama/aws-lambda-jruby
 
 [[!tag aws]]
